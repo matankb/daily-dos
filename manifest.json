@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Daily Do's",
+  "description": "Daily Do's helps you keep track of your daily tasks.",
+  "version": "1.0",
+
+  "author": [
+    "Noam Raz",
+    "Matan Kotler-Berkowitz"
+  ],
+  
+  "permissions": [
+    "notifications",
+    "storage",
+    "alarms"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  
+  "background": {
+    "scripts": ["notify.js"]
+    "persistent": false
+  }
+}
