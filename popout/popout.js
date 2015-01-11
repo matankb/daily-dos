@@ -26,9 +26,6 @@
         if(val) addItem(val);
         this.reset();
     };
-    document.getElementById("pop-out").onclick = function(e) {
-        var popout = window.open("popout/popout.html", "width=300");
-    }
     function addItem(val) {
         var item = new Item(val, items);
         items.unshift(item);
