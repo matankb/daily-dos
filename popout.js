@@ -37,7 +37,7 @@
             items: (function() {
                 var itemText = [];
                 for(var i = 0; i < items.length; i++) {
-                    itemText.push(items[i].label)
+                    itemText.unshift(items[i].label) //Use "unshift" to get items in correct order
                 }
                 return itemText;
             })()

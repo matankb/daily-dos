@@ -1,13 +1,4 @@
 /*Copyright (c) 2014 Noam Raz and Matan Kotler-Berkowitz. All rights reserved.*/
-#wrap-all {
-    font-size: 13px;
-    margin-top: 5px;
-}
-#wrap-all > div {
-    padding: 3px;
-    cursor: default;
-}
-#wrap-all > div:hover {
-    color: white;
-    background-color: rgb(68, 140, 255);
+body, html {
+    width: 300px;
 }

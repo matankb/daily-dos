@@ -27,7 +27,8 @@
         this.reset();
     };
     document.getElementById("pop-out").onclick = function(e) {
-        var popout = window.open("popout/popout.html", "width=300");
+        var popout = window.open("popout.html", "Placeholder for name attribute", "width=350, height=" + document.body.clientHeight);
+        window.close();
     }
     function addItem(val) {
         var item = new Item(val, items);
@@ -40,7 +41,7 @@
             items: (function() {
                 var itemText = [];
                 for(var i = 0; i < items.length; i++) {
-                    itemText.push(items[i].label)
+                    itemText.unshift(items[i].label); //Use "unshift" to get items in correct order
                 }
                 return itemText;
             })()

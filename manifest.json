@@ -21,7 +21,7 @@
   },
   
   "background": {
-    "scripts": ["notify.js"]
+    "scripts": ["notify.js"],
     "persistent": false
   }
 }

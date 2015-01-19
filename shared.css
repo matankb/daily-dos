@@ -2,7 +2,19 @@
 /*Reset*/
 body, html {
     font-family: sans-serif;
-    width: 300px;
+}
+#wrap-all {
+    font-size: 13px;
+    margin-top: 5px;
+}
+#wrap-all > div {
+    padding: 3px;
+    cursor: default;
+    word-wrap: break-word;
+}
+#wrap-all > div:hover {
+    color: white;
+    background-color: rgb(68, 140, 255);
 }
 /*Emulating Chrome*/
 input {
@@ -21,7 +33,7 @@ input:focus {
     border-color: rgb(77, 144, 254);
     outline: none;
 }
-input[type=submit] {
+input[type=submit], button, input[type=button] {
     -webkit-padding-end: 10px;
     -webkit-padding-start: 10px;
     min-height: 2em;
@@ -38,18 +50,18 @@ input[type=submit] {
     outline: none;
     text-shadow: 0 1px 0 rgb(240, 240, 240);
 }
-input[type=submit]:hover {
+input[type=submit]:hover, button:hover, input[type=button]:hover {
     background-image: -webkit-linear-gradient(#f0f0f0, #f0f0f0 38%, #e0e0e0);
     border-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.95);
     color: black;
 }
-input[type=submit]:active {
+input[type=submit]:active, button:active, input[type=button]:active {
     background-image: -webkit-linear-gradient(#e7e7e7, #e7e7e7 38%, #d7d7d7);
     box-shadow: none;
     text-shadow: none;
 }
-input[type=submit]:focus {
+input[type=submit]:focus, button:focus, input[type=button]:focus {
     border-color: rgb(77, 144, 254);
     outline: none;
 }
